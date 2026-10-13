@@ -48,6 +48,8 @@
 - 拆分 Memory Schema 与 Runtime Storage，增加 proposal → validate → commit → snapshot 边界。
 - 新增 Evaluation Runner、统一评分、Literary Engine heuristics 和 `python test.py` smoke suite。
 - 新增 MVP Knowledge Base 与 baseline/NovelOS A/B comparison contract。
+- 新增 NovelOS Literary Benchmark Dataset：六类目录、统一 case schema、6 条合成种子、来源清单、人工标注协议和去重/分割/验证工具。
+- 新增受控 GitHub 采集工具：查询、仓库评分、固定提交下载、格式提取和质量清洗；默认不下载故事正文。
 
 ## v2.1
 

@@ -1,0 +1,11 @@
+{
+  "repo": "owner/repository",
+  "commit": "REPLACE_WITH_FULL_COMMIT_SHA",
+  "status": "pending",
+  "data_license": "",
+  "license_evidence": "",
+  "reviewer": "",
+  "url": "",
+  "group_field": "document_id",
+  "files": ["data/questions.csv"]
+}

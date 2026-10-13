@@ -10,3 +10,4 @@ Thumbs.db
 *.local.json
 logs/
 runtime/state/
+data_work/

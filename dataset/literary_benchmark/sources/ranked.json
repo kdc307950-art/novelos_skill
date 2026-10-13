@@ -1,0 +1,212 @@
+[
+  {
+    "description": "LOFT: A 1 Million+ Token Long-Context Benchmark",
+    "forksCount": 18,
+    "fullName": "google-deepmind/loft",
+    "stargazersCount": 239,
+    "updatedAt": "2026-10-12T09:39:07Z",
+    "url": "https://github.com/google-deepmind/loft",
+    "queries": [
+      "long context benchmark"
+    ],
+    "repository_license": "Apache-2.0",
+    "score": 37.66,
+    "review_status": "candidate"
+  },
+  {
+    "description": "A Large-Scale Dataset and Cinematic Narrative Benchmark for Multi-Shot Subject-to-Video Generation",
+    "forksCount": 2,
+    "fullName": "zhang-haojie/MuSS",
+    "stargazersCount": 34,
+    "updatedAt": "2026-08-19T17:48:44Z",
+    "url": "https://github.com/zhang-haojie/MuSS",
+    "queries": [
+      "narrative benchmark"
+    ],
+    "repository_license": "unknown",
+    "score": 27.31,
+    "review_status": "candidate"
+  },
+  {
+    "description": "LEDGER: A Long-Context Benchmark of Corporate Annual Reports for Grounded Financial Retrieval and Extraction",
+    "forksCount": 0,
+    "fullName": "artefactory/LEDGER",
+    "stargazersCount": 18,
+    "updatedAt": "2026-09-28T11:45:06Z",
+    "url": "https://github.com/artefactory/LEDGER",
+    "queries": [
+      "long context benchmark"
+    ],
+    "repository_license": "MIT",
+    "score": 25.6,
+    "review_status": "candidate"
+  },
+  {
+    "description": "Personalized Story Evaluation Model",
+    "forksCount": 1,
+    "fullName": "facebookresearch/PerSE",
+    "stargazersCount": 17,
+    "updatedAt": "2026-06-11T12:34:14Z",
+    "url": "https://github.com/facebookresearch/PerSE",
+    "queries": [
+      "story evaluation"
+    ],
+    "repository_license": "NOASSERTION",
+    "score": 22.57,
+    "review_status": "candidate"
+  },
+  {
+    "description": "EvolvR: Self-Evolving Pairwise Reasoning for Story Evaluation to Enhance Generation",
+    "forksCount": 0,
+    "fullName": "xindaaW/EvolvR",
+    "stargazersCount": 5,
+    "updatedAt": "2026-09-17T06:22:04Z",
+    "url": "https://github.com/xindaaW/EvolvR",
+    "queries": [
+      "story evaluation"
+    ],
+    "repository_license": "unknown",
+    "score": 22.56,
+    "review_status": "candidate"
+  },
+  {
+    "description": "Code and data for TACL paper It’s not Rocket Science: Interpreting Figurative Language in Narratives",
+    "forksCount": 3,
+    "fullName": "tuhinjubcse/FigurativeNarrativeBenchmark",
+    "stargazersCount": 15,
+    "updatedAt": "2025-12-05T08:12:33Z",
+    "url": "https://github.com/tuhinjubcse/FigurativeNarrativeBenchmark",
+    "queries": [
+      "narrative benchmark"
+    ],
+    "repository_license": "MIT",
+    "score": 19.54,
+    "review_status": "candidate"
+  },
+  {
+    "description": "A visualization website for comparing LLMs' long context comprehension based on the FictionLiveBench benchmark.",
+    "forksCount": 0,
+    "fullName": "mnismt/llms-long-context-benchmark",
+    "stargazersCount": 5,
+    "updatedAt": "2026-01-16T10:44:36Z",
+    "url": "https://github.com/mnismt/llms-long-context-benchmark",
+    "queries": [
+      "long context benchmark"
+    ],
+    "repository_license": "unknown",
+    "score": 15.39,
+    "review_status": "candidate"
+  },
+  {
+    "description": "Simple long-context vLLM benchmark",
+    "forksCount": 0,
+    "fullName": "ekuznetsov139/long-context-benchmark",
+    "stargazersCount": 0,
+    "updatedAt": "2026-05-30T03:24:44Z",
+    "url": "https://github.com/ekuznetsov139/long-context-benchmark",
+    "queries": [
+      "long context benchmark"
+    ],
+    "repository_license": "unknown",
+    "score": 14.57,
+    "review_status": "candidate"
+  },
+  {
+    "description": "",
+    "forksCount": 0,
+    "fullName": "DingyiYang/Awesome-Story-Evaluation",
+    "stargazersCount": 5,
+    "updatedAt": "2025-10-10T01:23:36Z",
+    "url": "https://github.com/DingyiYang/Awesome-Story-Evaluation",
+    "queries": [
+      "story evaluation"
+    ],
+    "repository_license": "unknown",
+    "score": 13.85,
+    "review_status": "candidate"
+  },
+  {
+    "description": "LLM-generated story dataset with quality evaluations across 15 models for training and benchmarking creative writing capabilities.",
+    "forksCount": 0,
+    "fullName": "lars76/story-evaluation-llm",
+    "stargazersCount": 3,
+    "updatedAt": "2025-12-02T00:08:19Z",
+    "url": "https://github.com/lars76/story-evaluation-llm",
+    "queries": [
+      "story evaluation"
+    ],
+    "repository_license": "MIT",
+    "score": 13.75,
+    "review_status": "candidate"
+  },
+  {
+    "description": "From Numbers to Narratives: Benchmarking LLMs for Numeric Clustering and Labeling",
+    "forksCount": 0,
+    "fullName": "gauthamnairvm/from_numbers2narratives",
+    "stargazersCount": 1,
+    "updatedAt": "2025-12-19T03:06:22Z",
+    "url": "https://github.com/gauthamnairvm/from_numbers2narratives",
+    "queries": [
+      "narrative benchmark"
+    ],
+    "repository_license": "MIT",
+    "score": 12.52,
+    "review_status": "candidate"
+  },
+  {
+    "description": "An approach to multimodal model benchmarking based on the navigation of narrative mazes.",
+    "forksCount": 0,
+    "fullName": "ccpfoye/NarrativeBenchmark",
+    "stargazersCount": 0,
+    "updatedAt": "2026-02-12T15:14:00Z",
+    "url": "https://github.com/ccpfoye/NarrativeBenchmark",
+    "queries": [
+      "narrative benchmark"
+    ],
+    "repository_license": "MIT",
+    "score": 12.03,
+    "review_status": "candidate"
+  },
+  {
+    "description": "LLM Story Evaluation",
+    "forksCount": 0,
+    "fullName": "txoof/Story_Evaluation",
+    "stargazersCount": 0,
+    "updatedAt": "2025-11-04T09:23:25Z",
+    "url": "https://github.com/txoof/Story_Evaluation",
+    "queries": [
+      "story evaluation"
+    ],
+    "repository_license": "MIT",
+    "score": 10.31,
+    "review_status": "candidate"
+  },
+  {
+    "description": "",
+    "forksCount": 0,
+    "fullName": "chenfengshijie/Awesome-LongContextBenchmark",
+    "stargazersCount": 0,
+    "updatedAt": "2025-04-01T03:58:35Z",
+    "url": "https://github.com/chenfengshijie/Awesome-LongContextBenchmark",
+    "queries": [
+      "long context benchmark"
+    ],
+    "repository_license": "MIT",
+    "score": 7.89,
+    "review_status": "candidate"
+  },
+  {
+    "description": "A comics to narratives benchmark for multimodal large language models",
+    "forksCount": 0,
+    "fullName": "mattian7/ComicTalesBench",
+    "stargazersCount": 0,
+    "updatedAt": "2024-10-20T10:24:58Z",
+    "url": "https://github.com/mattian7/ComicTalesBench",
+    "queries": [
+      "narrative benchmark"
+    ],
+    "repository_license": "unknown",
+    "score": 6.71,
+    "review_status": "candidate"
+  }
+]

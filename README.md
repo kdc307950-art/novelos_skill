@@ -105,6 +105,8 @@ The current MVP runs benchmark fixtures, scores Agent outputs, writes resumable 
 
 ## Documentation
 
+- [NovelOS Literary Benchmark Dataset](dataset/literary_benchmark/README.md) — six categories, source discovery, review and ingestion tools; currently 6 unverified synthetic seeds.
+
 - [Skill entry point](SKILL.md)
 - [Contributing](CONTRIBUTING.md)
 - [Changelog](CHANGELOG.md)

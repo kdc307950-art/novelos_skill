@@ -1,0 +1,6 @@
+[
+  {"repo":"google-deepmind/narrativeqa","url":"https://github.com/google-deepmind/narrativeqa","uses":["02_Character","03_Structure","01_Continuity"],"repository_license":"Apache-2.0","data_license_reviewed":false,"status":"candidate","notes":"QA/summary joins require document_id; full story and Wikipedia content permissions reviewed separately."},
+  {"repo":"THUDM/LongBench","url":"https://github.com/THUDM/LongBench","uses":["01_Continuity"],"data_license_reviewed":false,"status":"candidate","notes":"Inspect constituent datasets and original train/test boundaries."},
+  {"repo":"dig-team/hanna-benchmark-asg","url":"https://github.com/dig-team/hanna-benchmark-asg","uses":["04_Literary","06_Failure"],"data_license_reviewed":false,"status":"candidate","notes":"Human story annotations; verify distribution permissions before import."},
+  {"repo":"WritingPreferenceBench/Writing-Preference-Bench","url":"https://github.com/WritingPreferenceBench/Writing-Preference-Bench","uses":["04_Literary"],"data_license_reviewed":false,"status":"candidate","notes":"Chinese/English preference pairs; do not turn pair labels into absolute scores."}
+]

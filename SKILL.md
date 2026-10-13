@@ -43,6 +43,7 @@ NovelOS 是面向百万字长篇小说的 AI 总编辑系统。它分析、记�
 - 作者模型：读取 `author_model/`；文学知识图谱：读取 `literary_graph/`；人类校准：读取 `calibration/`；多方案决策：读取 `decision_engine/option_generator.md`、`tradeoff_analysis.md`、`consequence_prediction.md` 和 `final_selector.md`。
 - 创作模拟：读取 `creative_engine/`；V3 数据与基准：读取 `dataset/`、`benchmark/`；作者确认与拒绝：读取 `human_feedback/`。
 - 可执行入口：在仓库根目录运行 `python test.py`；A/B 评测规范见 `benchmark_compare/`。
+- Literary Benchmark：读取 `dataset/literary_benchmark/README.md`；采集工具在 `crawler/`，运行数据集校验前必须完成文件级许可审查和人工标注。
 - 需要验证回归行为时读取 `tests/`；产品使用说明见 `README.md`，版本变化见 `CHANGELOG.md`。
 
 单章默认调用结构、人物、连续性、读者，必要时加入场景；整卷加入结构、场景、人物、连续性、读者；连载维护优先更新连续性、场景、伏笔、读者记忆和 novel state；市场定位才调用商业引擎。调度结果需说明调用和跳过原因。执行规范见 [orchestrator/execution_policy.md](orchestrator/execution_policy.md)。
