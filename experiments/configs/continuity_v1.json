@@ -1,0 +1,9 @@
+{
+  "experiment": "continuity_v1",
+  "task_type": "continuity",
+  "dataset": "Benchmark Suite v1",
+  "models": ["gpt", "claude", "qwen", "novelos"],
+  "temperature": 0.2,
+  "metrics": ["recall", "precision", "false_positive", "human_score"],
+  "status": "planned"
+}

@@ -10,7 +10,7 @@
 
 NovelOS is an AI-native workspace for planning, writing, reviewing, and maintaining long-form fiction.
 
-[![Version](https://img.shields.io/badge/version-3.10.2-6366f1.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-3.10.3-6366f1.svg)](CHANGELOG.md)
 [![Release](https://img.shields.io/github/v/release/kdc307950-art/novelos_skill?label=download)](https://github.com/kdc307950-art/novelos_skill/releases/latest)
 [![License](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-3000%20pending-f59e0b.svg)](benchmark_suite/README.md)
@@ -87,6 +87,12 @@ chapter01.md
 
 The [benchmark annotation guide](benchmark/annotation/guidelines.md) defines the four review dimensions and the [agreement module](benchmark/agreement/kappa.py) provides Cohen's and Fleiss' kappa calculations. No demo score or agreement value is presented as a real model result.
 
+## Trust layer
+
+Benchmark Suite v1 currently contains 3,000 designed cases. Human annotation is ongoing; the live state is published in [progress.json](benchmark/status/progress.json) and [dashboard.md](benchmark/status/dashboard.md). Designed, pending and verified counts are reported separately.
+
+The planned model report is [Benchmark Report v1](evaluation/model_compare/reports/benchmark_report.md). GPT, Claude, Qwen and NovelOS results remain `pending` until fixed experiments and blind human evaluation are actually run.
+
 ## GUI Alpha
 
 The GUI is a local workspace with a project dashboard, chapter editor, editor panel and Memory overview. It needs only the Python standard library.
@@ -159,6 +165,7 @@ Current queues are synthetic and pending human review. The repository reports fr
 | `benchmark_suite/`, `experiments/`, `comparison/` | Scientific validation and A/B experiments |
 | `human_eval/`, `annotation/`, `evidence/` | Human review and evidence records |
 | `interfaces/gui/`, `interfaces/mcp/` | Human and AI ecosystem entrypoints |
+| `docs/GUI.md`, `docs/CLI.md`, `docs/MCP.md` | User and integration guides |
 
 ## Runtime modes
 
@@ -170,7 +177,7 @@ Start with [CONTRIBUTING.md](CONTRIBUTING.md). New agents must follow [agents/in
 
 ## Project documents
 
-[Skill entry point](SKILL.md) · [Changelog](CHANGELOG.md) · [Demo Report](examples/demo_novel/README.md) · [Dataset](dataset/literary_benchmark/README.md) · [V3.9 validation](benchmark_suite/README.md) · [Creator Mode](creator_engine/quality_checker/self_review.md) · [MCP Alpha](interfaces/mcp/README.md)
+[Skill entry point](SKILL.md) · [Changelog](CHANGELOG.md) · [Demo Report](examples/demo_novel/README.md) · [Dataset](dataset/literary_benchmark/README.md) · [Trust Dashboard](benchmark/status/dashboard.md) · [V3.9 validation](benchmark_suite/README.md) · [Creator Mode](creator_engine/quality_checker/self_review.md) · [MCP Alpha](interfaces/mcp/README.md)
 
 ## License
 

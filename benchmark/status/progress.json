@@ -1,0 +1,41 @@
+{
+  "version": "Benchmark Suite v1",
+  "total_cases": 3000,
+  "categories": {
+    "continuity": {
+      "total": 1000,
+      "annotated": 0,
+      "progress": 0.0
+    },
+    "character": {
+      "total": 700,
+      "annotated": 0,
+      "progress": 0.0
+    },
+    "structure": {
+      "total": 500,
+      "annotated": 0,
+      "progress": 0.0
+    },
+    "literary": {
+      "total": 400,
+      "annotated": 0,
+      "progress": 0.0
+    },
+    "commercial": {
+      "total": 300,
+      "annotated": 0,
+      "progress": 0.0
+    },
+    "failure": {
+      "total": 100,
+      "annotated": 0,
+      "progress": 0.0
+    }
+  },
+  "human_verified": 0,
+  "pending_review": 3000,
+  "last_update": "2026-10-14",
+  "target_completion": "2026-Q4",
+  "status": "annotation_pending"
+}

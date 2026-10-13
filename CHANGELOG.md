@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.10.3
+
+- 新增 Benchmark Status System：公开设计数量、pending、verified 和目标时间。
+- 新增 Model Evaluation Report 模板、实验配置和 GUI/CLI/MCP 指南。
+- GitHub 首页增加 Trust Layer 入口和真实结果 pending 规则。
+
 ## v3.10.2
 
 - 新增公开 Demo Report：原创合成章节、人物、连续性、结构和总评报告。
