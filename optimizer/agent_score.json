@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0",
+  "agents": {},
+  "metric_definitions": {"recall": "expected findings recovered", "evidence_accuracy": "supported findings / findings", "revision_value": "human-rated usefulness", "cost": "tokens or measured runtime"},
+  "update_policy": "require benchmark evidence and human review before changing default routing"
+}

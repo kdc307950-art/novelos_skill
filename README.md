@@ -10,7 +10,7 @@
 
 NovelOS is an AI chief-editor system for million-word fiction: multi-agent analysis, long-term memory, continuity checks, and actionable revision decisions—diagnosis and planning, not bulk prose generation.
 
-[![Version](https://img.shields.io/badge/version-3.5.1-6366f1.svg)](CHANGELOG.md) [![Release](https://img.shields.io/github/v/release/kdc307950-art/novelos_skill?label=download)](https://github.com/kdc307950-art/novelos_skill/releases/latest) [![License](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-3.6.0-6366f1.svg)](CHANGELOG.md) [![Release](https://img.shields.io/github/v/release/kdc307950-art/novelos_skill?label=download)](https://github.com/kdc307950-art/novelos_skill/releases/latest) [![License](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
 
 </div>
 
@@ -44,7 +44,7 @@ flowchart LR
 
 ## Quick start
 
-Download the latest version from the [v3.5.1 release](https://github.com/kdc307950-art/novelos_skill/releases/latest), or clone the repository:
+Download the latest version from the [v3.6.0 release](https://github.com/kdc307950-art/novelos_skill/releases/latest), or clone the repository:
 
 ```bash
 git clone https://github.com/kdc307950-art/novelos_skill.git
@@ -75,7 +75,7 @@ $novel-analysis 女主应该死亡还是失忆？请调用文学、人物、商�
 
 ## Literary Benchmark Dataset
 
-NovelOS now ships a provenance-first benchmark foundation for literary intelligence. The first seed release contains six synthetic, unverified cases across six tracks:
+NovelOS now ships a provenance-first benchmark foundation for literary intelligence. The repository contains six reviewed-track seeds and a generated V3.6 queue of 1,000 synthetic cases awaiting human annotation:
 
 | Track | Purpose | Seed cases |
 | --- | --- | ---: |
@@ -93,7 +93,7 @@ python -m crawler.validate_dataset dataset/literary_benchmark
 python -m unittest discover -s tests/unit -p "test_dataset*.py"
 ```
 
-See the [dataset specification](dataset/literary_benchmark/README.md), [source catalog](dataset/literary_benchmark/sources/catalog.json), and [ingestion tools](crawler/).
+See the [dataset specification](dataset/literary_benchmark/README.md), [golden dataset lifecycle](golden_dataset/README.md), [source catalog](dataset/literary_benchmark/sources/catalog.json), and [ingestion tools](crawler/).
 
 ## Repository map
 

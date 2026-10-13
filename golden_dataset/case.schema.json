@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Golden Dataset Case",
+  "type": "object",
+  "required": ["id", "text", "task", "expected_answer", "reasoning_summary", "labels", "source", "license", "confidence", "status"],
+  "properties": {"id": {"type": "string"}, "text": {"type": "string"}, "task": {"type": "string"}, "expected_answer": {"type": "string"}, "reasoning_summary": {"type": "string"}, "labels": {"type": "object"}, "source": {"type": "string"}, "license": {"type": "string"}, "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1}, "status": {"enum": ["pending", "verified", "rejected"]}, "category": {"type": "string"}, "annotation_id": {"type": ["string", "null"]}}
+}

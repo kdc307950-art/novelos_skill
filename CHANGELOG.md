@@ -1,5 +1,12 @@
 # Changelog
 
+## v3.6.0
+
+- 新增 Dataset Factory：采集、清洗、分类、验证和导出模块。
+- 新增 1000 条 synthetic/pending Golden Dataset 队列，按六类配额组织。
+- 新增 Human Annotation Pipeline、分歧队列和 verified 导出门槛。
+- 新增模型相关性、A/B 对比、评估报告和 Agent Improvement Loop。
+
 ## v3.5.1
 
 - Published the Literary Benchmark Dataset foundation and source review workflow.
