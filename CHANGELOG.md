@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.10.4
+
+- 修正回归入口，使 Benchmark 状态文件不会被当作测试案例。
+
 ## v3.10.3
 
 - 新增 Benchmark Status System：公开设计数量、pending、verified 和目标时间。
