@@ -17,7 +17,13 @@ NovelOS is an AI-native workspace for planning, writing, reviewing, and maintain
 
 <a href="https://github.com/kdc307950-art/novelos_skill/releases/latest">Download</a> · <a href="#gui-alpha">GUI Alpha</a> · <a href="#mcp-alpha">MCP Alpha</a> · <a href="CONTRIBUTING.md">Contribute</a>
 
+<br />
+
+<a href="docs/README.zh-CN.md">中文说明书</a> · <a href="docs/README.en.md">English Guide</a>
+
 </div>
+
+> 首页提供中英文快速入口；完整安装、架构、GUI、MCP、数据集和贡献说明见双语说明书。
 
 ## Why NovelOS
 
