@@ -73,6 +73,28 @@ $novel-analysis 分析第 20 章，检查人物弧光、时间线冲突和章末
 $novel-analysis 女主应该死亡还是失忆？请调用文学、人物、商业和读者 Agent，进行 Debate 并比较两个方案的长期后果。
 ```
 
+## Literary Benchmark Dataset
+
+NovelOS now ships a provenance-first benchmark foundation for literary intelligence. The first seed release contains six synthetic, unverified cases across six tracks:
+
+| Track | Purpose | Seed cases |
+| --- | --- | ---: |
+| `01_Continuity` | Long-range facts, timelines and contradictions | 1 |
+| `02_Character` | Motivation, decisions and transformation | 1 |
+| `03_Structure` | Setup, turning points and pacing | 1 |
+| `04_Literary` | Theme, symbolism and literary mechanism | 1 |
+| `05_Commercial` | Promise, hooks and reader risk | 1 |
+| `06_Failure` | Overreach, hallucination and weak revision advice | 1 |
+
+Each case keeps provenance, license, source group, split, confidence and verification status. External text is imported only after file level license review; the repository's MIT license does not grant rights to third party datasets.
+
+```bash
+python -m crawler.validate_dataset dataset/literary_benchmark
+python -m unittest discover -s tests/unit -p "test_dataset*.py"
+```
+
+See the [dataset specification](dataset/literary_benchmark/README.md), [source catalog](dataset/literary_benchmark/sources/catalog.json), and [ingestion tools](crawler/).
+
 ## Repository map
 
 | Directory | Purpose |
@@ -90,9 +112,10 @@ $novel-analysis 女主应该死亡还是失忆？请调用文学、人物、商�
 | `evaluation/` | Quality scoring, prediction and regression evaluation |
 | `observability/` | Execution, cost, failure and performance traces |
 | `author_model/` | Author taste, beliefs, style and correction memory |
-| `dataset/`, `benchmark/`, `tests/` | Golden data and regression cases |
+| `dataset/`, `benchmark/`, `tests/` | Golden data, benchmarks and regression cases |
+| `crawler/`, `annotation/` | Source discovery, cleaning and human review |
 
-The current MVP runs benchmark fixtures, scores Agent outputs, writes resumable task state, and commits Memory proposals through a validation boundary.
+The current MVP runs benchmark fixtures, validates six literary dataset seeds, scores Agent outputs, writes resumable task state, and commits Memory proposals through a validation boundary.
 
 ## Design principles
 
