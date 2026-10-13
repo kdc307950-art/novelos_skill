@@ -1,0 +1,13 @@
+{
+  "experiment": "deepseek_v4_1_flash_pilot",
+  "task_type": "literary_benchmark_mixed",
+  "dataset": "dataset/literary_benchmark",
+  "model": "deepseek-flash",
+  "provider": "DeepSeek",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "temperature": 0.2,
+  "thinking": "disabled",
+  "cases": 6,
+  "metrics": ["completion_rate", "nonempty_output", "latency_ms", "tokens", "human_score"],
+  "status": "completed_runtime_pending_human"
+}
