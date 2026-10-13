@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS A/B Task",
+  "type": "object",
+  "required": ["task_id", "task_type", "input", "context", "expected_dimensions"],
+  "properties": {"task_id": {"type": "string"}, "task_type": {"enum": ["continuity", "character", "structure", "literary", "commercial"]}, "input": {"type": "string"}, "context": {"type": "string"}, "expected_dimensions": {"type": "array", "items": {"type": "string"}}, "prompt_version": {"type": "string"}}
+}

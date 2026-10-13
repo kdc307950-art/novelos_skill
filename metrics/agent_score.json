@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0",
+  "status": "pending_measurement",
+  "agents": {},
+  "required_evidence": ["benchmark_run", "sample_count", "human_labels_or_explicit_automatic_metric", "version"]
+}

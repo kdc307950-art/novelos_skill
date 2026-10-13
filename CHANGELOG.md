@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.7.0
+
+- 新增 Evaluation Engine：统一 Runner、Scorer、Comparator 和 Report。
+- 新增三人共识标注、A/B task schema、Agent metrics 和 release check。
+- 新增 Error Mining：错误模式分类、Agent 归因和人工批准的改进建议。
+
 ## v3.6.5
 
 - 新增 Dataset Maturity：人物/结构/文学评分 rubric 与双审阅流程。
