@@ -46,6 +46,11 @@ flowchart LR
 
 Download the latest version from the [v3.6.0 release](https://github.com/kdc307950-art/novelos_skill/releases/latest), or clone the repository:
 
+| Package | Link |
+| --- | --- |
+| v3.6.0 source archive | [Download ZIP](https://github.com/kdc307950-art/novelos_skill/releases/download/v3.6.0/novelos_skill-3.6.0.zip) |
+| Release notes and checksums | [Open v3.6.0](https://github.com/kdc307950-art/novelos_skill/releases/tag/v3.6.0) |
+
 ```bash
 git clone https://github.com/kdc307950-art/novelos_skill.git
 cd novelos_skill
