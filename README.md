@@ -1,64 +1,59 @@
 <div align="center">
 
-<img src="assets/novelos-mark.png" alt="NovelOS mark" width="180" />
+<img src="assets/novelos-mark.png" alt="NovelOS" width="164" />
 
 # NovelOS
 
-**面向百万字长篇小说的 AI 总编辑系统。**
+**面向百万字长篇小说的 AI 编辑与创作工作台。**
 
-多 Agent 分析、长期记忆、连续性审查与可执行改稿决策；只做诊断、模拟与规划，不批量生成正文。
+管理世界观、人物、时间线、伏笔、章节创作和审稿流程。默认编辑，授权创作。
 
-NovelOS is an AI chief-editor system for million-word fiction: multi-agent analysis, long-term memory, continuity checks, and actionable revision decisions—diagnosis and planning, not bulk prose generation.
+NovelOS is an AI-native workspace for planning, writing, reviewing, and maintaining long-form fiction.
 
-[![Version](https://img.shields.io/badge/version-3.10.1-6366f1.svg)](CHANGELOG.md) [![Release](https://img.shields.io/github/v/release/kdc307950-art/novelos_skill?label=download)](https://github.com/kdc307950-art/novelos_skill/releases/latest) [![License](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-3.10.1-6366f1.svg)](CHANGELOG.md)
+[![Release](https://img.shields.io/github/v/release/kdc307950-art/novelos_skill?label=download)](https://github.com/kdc307950-art/novelos_skill/releases/latest)
+[![License](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
+[![Benchmarks](https://img.shields.io/badge/benchmarks-3000%20pending-f59e0b.svg)](benchmark_suite/README.md)
+
+<a href="https://github.com/kdc307950-art/novelos_skill/releases/latest">Download</a> · <a href="#gui-alpha">GUI Alpha</a> · <a href="#mcp-alpha">MCP Alpha</a> · <a href="CONTRIBUTING.md">Contribute</a>
 
 </div>
 
-## What it does
+## Why NovelOS
 
-NovelOS treats a long novel as a living system. It routes each request to the smallest useful set of editorial agents, keeps evidence-backed memory for characters, events, timelines and foreshadowing, and turns competing opinions into traceable decisions.
+Long fiction needs state across chapters. NovelOS routes each request to the smallest useful set of editors, retrieves evidence from project memory, debates high impact choices, evaluates the result, and keeps proposed changes behind a commit boundary.
 
-- Structure, scene, character psychology, relationship and continuity analysis.
-- Literary theme, symbolism, narrative voice and aesthetic review.
-- Commercial promise, reader retention and audience simulation.
-- Multi-agent debate and decision tradeoffs.
-- Creative branch simulation with consequence prediction.
-- Author preference, feedback and style learning.
-- Runtime traces, evaluation datasets, benchmarks and regression cases.
+| Capability | What you get |
+| --- | --- |
+| Editorial analysis | Structure, scenes, characters, continuity, literary quality, reader and commercial review |
+| Long memory | Canon, character state, timeline, foreshadowing, writing state and snapshots |
+| Decision support | Multi-agent debate, options, tradeoffs, consequence prediction and revision plans |
+| Creator Mode | Authorized scene drafting, chapter drafting, rewriting, self-review and style adaptation |
+| Evidence | Golden datasets, benchmark suite, blind-review contracts, metrics and ablation plans |
+| Integrations | GUI workspace and MCP tools, resources and prompts backed by the same Core |
 
-## How it works
+## Architecture
 
 ```mermaid
 flowchart LR
-  A[User request] --> B[Task classifier]
-  B --> C[Runtime kernel]
-  C --> D[Orchestrator]
-  D --> E[Memory retrieval]
-  E --> F[Editorial agents]
-  F --> G{Debate when needed}
-  G --> H[Decision intelligence]
-  H --> I[Evaluation and observability]
-  I --> J[Audited memory update]
-  J --> K[Editor report]
+  U[Author or AI client] --> I[GUI / MCP]
+  I --> R[Runtime Kernel]
+  R --> O[Orchestrator]
+  O --> M[Memory Retrieval]
+  M --> A[Editorial or Creator Agents]
+  A --> D[Debate and Decision]
+  D --> E[Evaluation and Evidence]
+  E --> C[Proposal / Confirmation / Commit]
+  C --> S[Reports and Snapshots]
 ```
 
 ## Quick start
 
-Download the latest version from the [v3.10.1 release](https://github.com/kdc307950-art/novelos_skill/releases/latest), or clone the repository:
-
-| Package | Link |
-| --- | --- |
-| v3.6.0 source archive | [Download ZIP](https://github.com/kdc307950-art/novelos_skill/releases/download/v3.6.0/novelos_skill-3.6.0.zip) |
-| Release notes and checksums | [Open v3.6.0](https://github.com/kdc307950-art/novelos_skill/releases/tag/v3.6.0) |
+Clone the repository and run the dependency free checks:
 
 ```bash
 git clone https://github.com/kdc307950-art/novelos_skill.git
 cd novelos_skill
-```
-
-Run the dependency free benchmark smoke suite:
-
-```bash
 python test.py
 ```
 
@@ -70,96 +65,93 @@ Passed: 5
 Failed: 0
 ```
 
-```text
-$novel-analysis 分析第 20 章，检查人物弧光、时间线冲突和章末钩子，给出 P0–P2 改稿计划。
-```
+The latest source archive is available from the [v3.10.1 release](https://github.com/kdc307950-art/novelos_skill/releases/latest).
 
-```text
-$novel-analysis 女主应该死亡还是失忆？请调用文学、人物、商业和读者 Agent，进行 Debate 并比较两个方案的长期后果。
-```
+## GUI Alpha
 
-## Literary Benchmark Dataset
-
-NovelOS now ships a provenance-first benchmark foundation for literary intelligence. The repository contains six reviewed-track seeds and a generated V3.6 queue of 1,000 synthetic cases awaiting human annotation:
-
-| Track | Purpose | Seed cases |
-| --- | --- | ---: |
-| `01_Continuity` | Long-range facts, timelines and contradictions | 1 |
-| `02_Character` | Motivation, decisions and transformation | 1 |
-| `03_Structure` | Setup, turning points and pacing | 1 |
-| `04_Literary` | Theme, symbolism and literary mechanism | 1 |
-| `05_Commercial` | Promise, hooks and reader risk | 1 |
-| `06_Failure` | Overreach, hallucination and weak revision advice | 1 |
-
-Each case keeps provenance, license, source group, split, confidence and verification status. External text is imported only after file level license review; the repository's MIT license does not grant rights to third party datasets.
+The GUI is a local workspace with a project dashboard, chapter editor, editor panel and Memory overview. It needs only the Python standard library.
 
 ```bash
-python -m crawler.validate_dataset dataset/literary_benchmark
+python interfaces/gui/server.py
+```
+
+Open [http://127.0.0.1:8765](http://127.0.0.1:8765). You can paste a chapter into the editor, click **分析章节**, and see the shared Core API response. The interface starts in Editor Mode; creator actions require explicit authorization and review.
+
+The GUI entrypoint is [interfaces/gui/server.py](interfaces/gui/server.py), with its static workspace in [interfaces/gui/static](interfaces/gui/static).
+
+## MCP Alpha
+
+The MCP adapter uses JSON-RPC over stdin/stdout and exposes the same Core through 10 tools, 5 resources and 5 prompts.
+
+Start it locally:
+
+```bash
+python -m interfaces.mcp.server
+```
+
+For an MCP client configuration, point the command at the repository environment:
+
+```json
+{
+  "mcpServers": {
+    "novelos": {
+      "command": "python",
+      "args": ["-m", "interfaces.mcp.server"],
+      "cwd": "/absolute/path/to/novelos_skill"
+    }
+  }
+}
+```
+
+Available surfaces:
+
+| Surface | Examples |
+| --- | --- |
+| Tools | `analyze_chapter`, `check_continuity`, `get_character`, `get_timeline`, `search_knowledge`, `evaluate_scene`, `generate_scene`, `rewrite_scene`, `update_memory`, `get_project_status` |
+| Resources | `novelos://project/current`, `novelos://character/all`, `novelos://timeline/current`, `novelos://world/rules`, `novelos://writing/state` |
+| Prompts | `novelos-review-chapter`, `novelos-plan-next-chapter`, `novelos-character-analysis`, `novelos-write-scene`, `novelos-revise-scene` |
+
+Read tools and resources are available immediately. `update_memory` returns a proposal until `confirm=true`; `generate_scene` and `rewrite_scene` also require `mode="creator"`. This keeps GUI and MCP writes behind the same confirmation gate.
+
+## Data and validation
+
+NovelOS includes a 3,000-case pending Benchmark Suite, a 1,000-case Golden Dataset queue, provenance-aware ingestion tools, human annotation rubrics, blind-evaluation contracts, statistics, ablation and failure analysis.
+
+```bash
+python -m benchmark_suite.validate_suite benchmark_suite/pending
+python -m dataset_factory.validator.progress golden_dataset/pending
 python -m unittest discover -s tests/unit -p "test_dataset*.py"
 ```
 
-See the [dataset specification](dataset/literary_benchmark/README.md), [golden dataset lifecycle](golden_dataset/README.md), [source catalog](dataset/literary_benchmark/sources/catalog.json), and [ingestion tools](crawler/).
-
-V3.6.5 adds annotation rubrics, a two reviewer process, AI/human score alignment, bias analysis, and A/B comparison directories. Run `python -m dataset_factory.validator.progress golden_dataset/pending` to inspect actual data maturity.
+Current queues are synthetic and pending human review. The repository reports framework validation separately from intelligence validation; it does not claim model superiority without fixed baselines and blind human scores.
 
 ## Repository map
 
 | Directory | Purpose |
 | --- | --- |
-| `agents/` | Agent contract and editorial roles |
-| `orchestrator/` | Routing, modes, execution policy and context levels |
-| `runtime/` | Executable pipeline, scheduling, state, logs and Memory Commit |
-| `memory/` | Schemas, runtime storage, history and snapshots |
-| `memory_engine/` | Retrieval, relevance and context construction |
-| `literary_engine/` | Theme, symbolism, prose, voice and aesthetic judgment |
-| `literary_graph/` | Reusable literary mechanisms and patterns |
-| `creative_engine/` | Branch simulation and consequence prediction |
-| `debate_engine/` | Multi-agent argument, conflict resolution and consensus |
-| `decision_engine/` | Options, tradeoffs, predictions and final selection |
-| `evaluation/` | Quality scoring, prediction and regression evaluation |
-| `observability/` | Execution, cost, failure and performance traces |
-| `author_model/` | Author taste, beliefs, style and correction memory |
-| `dataset/`, `benchmark/`, `tests/` | Golden data, benchmarks and regression cases |
-| `crawler/`, `annotation/` | Source discovery, cleaning and human review |
-| `evaluation_engine/`, `metrics/`, `optimizer/` | Measured evaluation, agent metrics and failure-driven improvement |
-| `experiments/`, `human_eval/`, `evidence/` | Reproducible experiments, blind review and evidence records |
-| `agent_analysis/`, `failure_analysis/` | Ablation, contribution and failure intelligence |
-| `benchmark_suite/`, `comparison/`, `statistics/`, `ablation/` | Scientific validation, comparison and statistics |
-| `interfaces/gui/`, `interfaces/mcp/` | GUI workspace and MCP Alpha adapter |
-| `editor_engine/`, `creator_engine/` | Editor Mode and explicitly authorized Creator Mode |
-| `memory/canon/`, `memory/writing_state.json` | Canonical facts and draft writing state |
+| `runtime/` | Executor, pipeline, state, logs and Memory Commit |
+| `agents/`, `orchestrator/` | Agent contracts, routing and modes |
+| `editor_engine/`, `creator_engine/` | Editor Mode and authorized Creator Mode |
+| `memory/`, `memory_engine/` | Canon, runtime storage, retrieval and snapshots |
+| `literary_engine/`, `literary_graph/` | Literary analysis and reusable mechanisms |
+| `debate_engine/`, `decision_engine/` | Debate, options, tradeoffs and final selection |
+| `evaluation/`, `evaluation_engine/` | Scoring, runners and evaluation reports |
+| `benchmark_suite/`, `experiments/`, `comparison/` | Scientific validation and A/B experiments |
+| `human_eval/`, `annotation/`, `evidence/` | Human review and evidence records |
+| `interfaces/gui/`, `interfaces/mcp/` | Human and AI ecosystem entrypoints |
 
 ## Runtime modes
 
-Editor Mode is the default. It analyzes, plans, reviews and proposes revisions. Creator Mode is enabled only when the author explicitly asks for drafting, expansion or rewriting:
+Editor Mode is the default for diagnosis, planning, review and revision decisions. Creator Mode is entered only when the author explicitly requests drafting, expansion or rewriting. Creator drafts pass through context loading, scene planning, generation, self-review, revision and author confirmation before Memory Commit.
 
-```text
-$novel-analysis Creator Mode：根据这个场景计划生成初稿，先完成 Self Review，再列出需要我确认的 Memory changes。
-```
+## Contributing
 
-Creator drafts pass through context loading, scene planning, draft generation, self review, revision and author confirmation. Drafts remain separate from canonical Memory until confirmed.
+Start with [CONTRIBUTING.md](CONTRIBUTING.md). New agents must follow [agents/interface.md](agents/interface.md); new data must include provenance, license, split, labels and review status. See [SECURITY.md](SECURITY.md) before sharing unpublished text or author feedback.
 
-The current MVP runs benchmark fixtures, validates six literary dataset seeds, scores Agent outputs, writes resumable task state, and commits Memory proposals through a validation boundary.
+## Project documents
 
-## Design principles
-
-1. Important claims point to a chapter, scene or stored record.
-2. Facts, inferences and recommendations remain separate.
-3. Agents submit candidate memory changes; Runtime validates before canonical updates.
-4. Debate preserves disagreement when evidence or goals do not support one answer.
-5. Author feedback changes future priorities only after repeated or explicit confirmation.
-6. The system proposes diagnostics, simulations and plans. The author owns the story.
-
-## Documentation
-
-- [NovelOS Literary Benchmark Dataset](dataset/literary_benchmark/README.md) — six categories, source discovery, review and ingestion tools; currently 6 unverified synthetic seeds.
-
-- [Skill entry point](SKILL.md)
-- [Contributing](CONTRIBUTING.md)
-- [Changelog](CHANGELOG.md)
-- [Security and privacy](SECURITY.md)
-- [Code of Conduct](CODE_OF_CONDUCT.md)
+[Skill entry point](SKILL.md) · [Changelog](CHANGELOG.md) · [V3.6 dataset](dataset/literary_benchmark/README.md) · [V3.9 validation](benchmark_suite/README.md) · [Creator Mode](creator_engine/quality_checker/self_review.md) · [MCP Alpha](interfaces/mcp/README.md)
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE). Third-party datasets keep their own licenses and attribution requirements.
