@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.10.1
+
+- 新增 GUI Alpha：项目状态、章节编辑、分析面板和 Memory 概览。
+- 新增 MCP Alpha：tools、resources、prompts 三类 JSON-RPC 入口。
+- GUI 与 MCP 共用 Runtime/Core；写入和 Creator Mode 受确认门控。
+
 ## v3.10.0
 
 - 新增 Editor Mode / Creator Mode 双模式运行策略，默认保持编辑模式。

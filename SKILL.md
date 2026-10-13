@@ -1,9 +1,9 @@
 ---
 name: novel-analysis
-description: Operate NovelOS v3.10, a dual-mode long-form fiction workspace with default editorial analysis and explicitly authorized Creator Mode for scene drafting, chapter writing, rewriting, self-review, and memory-safe revision. It includes evidence validation, A/B benchmarks, agent analysis, executable runtime, and observable editorial decisions.
+description: Operate NovelOS v3.10.1, a dual-mode long-form fiction workspace with a GUI Alpha and MCP Alpha, default editorial analysis, explicitly authorized Creator Mode, evidence validation, A/B benchmarks, executable runtime, and memory-safe revision.
 ---
 
-# NovelOS v3.10
+# NovelOS v3.10.1
 
 NovelOS 是面向百万字长篇小说的 AI 总编辑系统。它分析、记忆、审查和提出修改决策，不替作者批量生成正文，也不擅自改变作者意图。
 
@@ -51,6 +51,7 @@ NovelOS 是面向百万字长篇小说的 AI 总编辑系统。它分析、记�
 - V3.8 Evidence：读取 `experiments/`、`human_eval/`、`evidence/`、`agent_analysis/` 和 `failure_analysis/`；未完成真实模型运行和盲评时不得声明优于基线。
 - V3.9 Scientific Validation：读取 `benchmark_suite/`、`comparison/`、`statistics/`、`ablation/` 和 `agent_metrics/`；平均分差异只能作为 descriptive evidence，显著性和效应量必须附样本数与方法。
 - V3.10 Creator Mode：读取 `runtime/modes.json`、`creator_engine/`、`agents/creation_agents.md` 和 `memory/writing_state.json`；默认编辑，创作必须显式授权并经过质量审查。
+- V3.10 Product Layer：读取 `interfaces/gui/` 和 `interfaces/mcp/`；GUI 与 MCP 只能调用共享 Core，写操作需要 proposal/confirmation/commit。
 - 需要验证回归行为时读取 `tests/`；产品使用说明见 `README.md`，版本变化见 `CHANGELOG.md`。
 
 单章默认调用结构、人物、连续性、读者，必要时加入场景；整卷加入结构、场景、人物、连续性、读者；连载维护优先更新连续性、场景、伏笔、读者记忆和 novel state；市场定位才调用商业引擎。调度结果需说明调用和跳过原因。执行规范见 [orchestrator/execution_policy.md](orchestrator/execution_policy.md)。
