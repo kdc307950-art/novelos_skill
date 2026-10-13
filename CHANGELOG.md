@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.6.5
+
+- 新增 Dataset Maturity：人物/结构/文学评分 rubric 与双审阅流程。
+- 新增 AI/人工评分对齐、Pearson/MAE、偏差分析和 A/B 对比骨架。
+- 新增 pending/verified/rejected 数据进度统计。
+
 ## v3.6.0
 
 - 新增 Dataset Factory：采集、清洗、分类、验证和导出模块。
