@@ -10,7 +10,7 @@
 
 NovelOS is an AI-native workspace for planning, writing, reviewing, and maintaining long-form fiction.
 
-[![Version](https://img.shields.io/badge/version-3.10.4-6366f1.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-3.10.5-6366f1.svg)](CHANGELOG.md)
 [![Release](https://img.shields.io/github/v/release/kdc307950-art/novelos_skill?label=download)](https://github.com/kdc307950-art/novelos_skill/releases/latest)
 [![License](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-3000%20pending-f59e0b.svg)](benchmark_suite/README.md)

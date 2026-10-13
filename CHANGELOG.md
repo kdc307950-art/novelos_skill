@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.10.5
+
+- 修正回归入口的 `run_case` 导入，恢复 5 条旧 Benchmark smoke 测试。
+
 ## v3.10.4
 
 - 修正回归入口，使 Benchmark 状态文件不会被当作测试案例。

@@ -3,7 +3,7 @@
 from pathlib import Path
 import sys
 
-from evaluation.benchmark_runner import run_directory
+from evaluation.benchmark_runner import run_case
 
 
 if __name__ == "__main__":
