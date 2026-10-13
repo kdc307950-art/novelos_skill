@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.8.0
+
+- 新增 Experiment Engine、20 个计划任务和可复现实验记录。
+- 新增盲测 Human Evaluation、三项目标指标、Evidence Database 和实验报告结构。
+- 新增 Agent Contribution/Ablation、Metrics Dashboard 和 Failure Intelligence。
+
 ## v3.7.0
 
 - 新增 Evaluation Engine：统一 Runner、Scorer、Comparator 和 Report。

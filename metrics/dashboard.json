@@ -1,0 +1,7 @@
+{
+  "version": "3.8.0",
+  "status": "pending_measurement",
+  "targets": {"human_preference": 0.7, "evaluation_pearson": 0.8, "continuity_gain": 0.3, "memory_gain": 0.2},
+  "measured": {},
+  "requirements": ["sample_count", "baseline_definition", "confidence_interval", "human_review_status"]
+}

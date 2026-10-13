@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Blind Human Evaluation",
+  "type": "object",
+  "required": ["task_id", "reviewer_id", "blind_order", "scores", "comments", "status"],
+  "properties": {"task_id": {"type": "string"}, "reviewer_id": {"type": "string"}, "blind_order": {"enum": ["A_first", "B_first"]}, "scores": {"type": "object", "properties": {"structure": {"type": "number", "minimum": 1, "maximum": 10}, "character": {"type": "number", "minimum": 1, "maximum": 10}, "evidence": {"type": "number", "minimum": 1, "maximum": 10}, "usefulness": {"type": "number", "minimum": 1, "maximum": 10}, "overall": {"type": "number", "minimum": 1, "maximum": 10}}}, "comments": {"type": "array", "items": {"type": "string"}}, "status": {"enum": ["pending", "completed", "disputed"]}}
+}

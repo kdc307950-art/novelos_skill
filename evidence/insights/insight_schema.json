@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Evidence Insight",
+  "type": "object",
+  "required": ["id", "finding", "cause", "evidence_refs", "confidence", "status"],
+  "properties": {"id": {"type": "string"}, "finding": {"type": "string"}, "cause": {"type": "string"}, "evidence_refs": {"type": "array", "items": {"type": "string"}}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}, "status": {"enum": ["candidate", "supported", "rejected"]}}
+}

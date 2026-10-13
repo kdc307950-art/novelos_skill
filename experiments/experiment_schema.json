@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Experiment",
+  "type": "object",
+  "required": ["id", "name", "dataset", "baseline", "novelos_version", "metrics", "status"],
+  "properties": {"id": {"type": "string"}, "name": {"type": "string"}, "dataset": {"type": "string"}, "baseline": {"type": "string"}, "novelos_version": {"type": "string"}, "metrics": {"type": "array", "items": {"type": "string"}}, "seed": {"type": ["integer", "null"]}, "status": {"enum": ["planned", "running", "pending_human", "completed", "blocked"]}, "notes": {"type": "string"}}
+}

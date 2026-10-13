@@ -1,0 +1,16 @@
+{
+  "id": "EXP_001",
+  "name": "continuity_test",
+  "dataset": "golden_dataset/verified",
+  "baseline": "same_model_without_novel_os",
+  "novelos_version": "3.8.0",
+  "metrics": [
+    "accuracy",
+    "quality",
+    "human_score"
+  ],
+  "status": "pending_human",
+  "started_at": "2026-10-13T15:23:19.497921+00:00",
+  "results": [],
+  "human_eval_required": true
+}
