@@ -1,0 +1,11 @@
+{
+  "experiment": "dashscope_v4_1_compare_pilot",
+  "provider": "Alibaba Cloud Model Studio",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "models": ["qwen3.8-27b", "kimi-k3"],
+  "dataset": "dataset/literary_benchmark",
+  "cases": 6,
+  "temperature": 0.2,
+  "metrics": ["completion_rate", "nonempty_output", "latency_ms", "tokens", "human_score"],
+  "status": "planned"
+}
