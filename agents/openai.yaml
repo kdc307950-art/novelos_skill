@@ -1,7 +1,9 @@
 interface:
-  display_name: "NovelOS v2.2 小说总编辑"
-  short_description: "面向百万字长篇小说的结构记忆分析与编辑决策系统"
-  default_prompt: "使用 $novel-analysis 管理这部小说的章节记忆，运行结构、连续性、商业和读者分析，并输出编辑报告与优先级改稿计划。"
+  display_name: "NovelOS v3.0 小说总编辑"
+  short_description: "面向百万字长篇小说的 AI 总编辑与文学决策系统"
+  default_prompt: "使用 $novel-analysis 管理这部小说的长期记忆，运行多 Agent 分析、文学评估和创作分支模拟，并输出可追踪的编辑决策。"
+  icon_large: "./assets/novelos-mark.png"
+  brand_color: "#0F2A5F"
 policy:
   allow_implicit_invocation: true
 
