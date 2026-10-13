@@ -1,9 +1,9 @@
 ---
 name: novel-analysis
-description: Operate NovelOS v3.8, an evidence validated long-form fiction agent framework with reproducible experiments, blind human evaluation, A/B benchmarks, agent contribution analysis, error mining, executable runtime, memory commit boundaries, literary knowledge, and observable editorial decisions. Use for chapter or manuscript diagnostics and lifecycle consistency management; do not use it as a bulk prose generator.
+description: Operate NovelOS v3.10, a dual-mode long-form fiction workspace with default editorial analysis and explicitly authorized Creator Mode for scene drafting, chapter writing, rewriting, self-review, and memory-safe revision. It includes evidence validation, A/B benchmarks, agent analysis, executable runtime, and observable editorial decisions.
 ---
 
-# NovelOS v3.8
+# NovelOS v3.10
 
 NovelOS 是面向百万字长篇小说的 AI 总编辑系统。它分析、记忆、审查和提出修改决策，不替作者批量生成正文，也不擅自改变作者意图。
 
@@ -15,13 +15,14 @@ NovelOS 是面向百万字长篇小说的 AI 总编辑系统。它分析、记�
 
 每次处理章节或资料都按以下顺序执行：
 
-1. **分类与运行计划**：按 [orchestrator/task_classifier.md](orchestrator/task_classifier.md) 分类，交由 `runtime/executor.py` 生成可恢复的执行计划。
+1. **分类与运行计划**：按 [orchestrator/task_classifier.md](orchestrator/task_classifier.md) 分类，交由 `runtime/executor.py` 生成可恢复的执行计划；默认进入 Editor Mode。
 2. **调度与上下文**：读取 [orchestrator/router.md](orchestrator/router.md)，再由 `memory_engine/` 检索 Level 1/2/3 上下文；记录实际引用和成本。
 3. **解析与 Agent 执行**：通过 `runtime/pipeline.py` 调用遵守 [agents/interface.md](agents/interface.md) 的 Agent，并把状态与日志写入 `runtime/state/` 和 `logs/`。
 4. **争议协商与决策**：涉及重大取舍时运行 `debate_engine/`；再由 `decision_engine/` 生成、比较和选择方案。
 5. **评价与验证**：由 `evaluation/evaluator.py`、`evaluation/scoring.py` 和 `evaluation/benchmark_runner.py` 评价协议、质量和回归结果。
 6. **Memory Commit**：Agent 只提交 proposal；Runtime 通过 `runtime/memory_manager.py` 校验、写入 `memory/history/` 并生成 Snapshot 后才更新运行数据。
-7. **版本化学习**：将确认反馈写入 `author_model/` 和 `learning/`，输出报告；不得静默覆盖冲突事实。
+7. **创作授权**：只有用户明确选择 Creator Mode 时，才读取 `creator_engine/` 生成场景或章节草稿；生成必须经过 Self Review、Revision 和作者确认，草稿不能直接写入 canonical Memory。
+8. **版本化学习**：将确认反馈写入 `author_model/` 和 `learning/`，输出报告；不得静默覆盖冲突事实。
 
 长文本分批处理时使用稳定 ID（章节、场景、人物、事件、伏笔），每批先加载既有记忆再更新，保证 100 万字规模下可增量维护。
 
@@ -49,6 +50,7 @@ NovelOS 是面向百万字长篇小说的 AI 总编辑系统。它分析、记�
 - V3.7 Evaluation Intelligence：读取 `evaluation_engine/`、`metrics/`、`optimizer/` 和 `tests/release_check/`；报告必须区分 framework validation 与 intelligence validation。
 - V3.8 Evidence：读取 `experiments/`、`human_eval/`、`evidence/`、`agent_analysis/` 和 `failure_analysis/`；未完成真实模型运行和盲评时不得声明优于基线。
 - V3.9 Scientific Validation：读取 `benchmark_suite/`、`comparison/`、`statistics/`、`ablation/` 和 `agent_metrics/`；平均分差异只能作为 descriptive evidence，显著性和效应量必须附样本数与方法。
+- V3.10 Creator Mode：读取 `runtime/modes.json`、`creator_engine/`、`agents/creation_agents.md` 和 `memory/writing_state.json`；默认编辑，创作必须显式授权并经过质量审查。
 - 需要验证回归行为时读取 `tests/`；产品使用说明见 `README.md`，版本变化见 `CHANGELOG.md`。
 
 单章默认调用结构、人物、连续性、读者，必要时加入场景；整卷加入结构、场景、人物、连续性、读者；连载维护优先更新连续性、场景、伏笔、读者记忆和 novel state；市场定位才调用商业引擎。调度结果需说明调用和跳过原因。执行规范见 [orchestrator/execution_policy.md](orchestrator/execution_policy.md)。

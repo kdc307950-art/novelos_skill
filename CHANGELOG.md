@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.10.0
+
+- 新增 Editor Mode / Creator Mode 双模式运行策略，默认保持编辑模式。
+- 新增 Creator Engine Alpha：场景计划、场景/章节写作契约、风格适配、Revision 和 Self Review。
+- 新增 writing state、canon、scene state、character state 和 style profile 目录边界。
+
 ## v3.9.0
 
 - 新增 3000 条 Benchmark Suite pending 配额与校验器。

@@ -1,0 +1,8 @@
+{
+  "default_mode": "editor",
+  "modes": {
+    "editor": {"requires_explicit_opt_in": false, "allows_bulk_prose": false, "purpose": "diagnosis, planning, continuity and revision decisions"},
+    "creator": {"requires_explicit_opt_in": true, "allows_bulk_prose": true, "purpose": "authorized scene generation, chapter drafting, expansion and rewriting"}
+  },
+  "creator_guardrails": ["load canon before drafting", "run self review before memory proposal", "commit memory only after author confirmation", "preserve unresolved threads"]
+}
