@@ -1,5 +1,10 @@
 # Changelog
 
+## v3.5.1
+
+- Published the Literary Benchmark Dataset foundation and source review workflow.
+- Refreshed the GitHub showcase page and release download entry.
+
 ## v2.2
 
 - 新增统一 Agent Interface、Orchestrator 路由和执行策略。
