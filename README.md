@@ -10,7 +10,7 @@
 
 NovelOS is an AI chief-editor system for million-word fiction: multi-agent analysis, long-term memory, continuity checks, and actionable revision decisions—diagnosis and planning, not bulk prose generation.
 
-[![Version](https://img.shields.io/badge/version-3.5.0-6366f1.svg)](CHANGELOG.md) [![License](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-3.5.0-6366f1.svg)](CHANGELOG.md) [![Release](https://img.shields.io/github/v/release/kdc307950-art/novelos_skill?label=download)](https://github.com/kdc307950-art/novelos_skill/releases/latest) [![License](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
 
 </div>
 
@@ -44,6 +44,27 @@ flowchart LR
 
 ## Quick start
 
+Download the latest version from the [v3.5.0 release](https://github.com/kdc307950-art/novelos_skill/releases/latest), or clone the repository:
+
+```bash
+git clone https://github.com/kdc307950-art/novelos_skill.git
+cd novelos_skill
+```
+
+Run the dependency free benchmark smoke suite:
+
+```bash
+python test.py
+```
+
+Expected output:
+
+```text
+5 benchmarks
+Passed: 5
+Failed: 0
+```
+
 ```text
 $novel-analysis 分析第 20 章，检查人物弧光、时间线冲突和章末钩子，给出 P0–P2 改稿计划。
 ```
@@ -70,12 +91,6 @@ $novel-analysis 女主应该死亡还是失忆？请调用文学、人物、商�
 | `observability/` | Execution, cost, failure and performance traces |
 | `author_model/` | Author taste, beliefs, style and correction memory |
 | `dataset/`, `benchmark/`, `tests/` | Golden data and regression cases |
-
-The executable smoke suite is intentionally small and dependency free:
-
-```powershell
-python test.py
-```
 
 The current MVP runs benchmark fixtures, scores Agent outputs, writes resumable task state, and commits Memory proposals through a validation boundary.
 
