@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Runtime Character",
+  "type": "object",
+  "required": ["id", "name", "role"],
+  "properties": {"id": {"type": "string"}, "name": {"type": "string"}, "role": {"type": "string"}, "external_goal": {"type": "string"}, "internal_need": {"type": "string"}, "false_belief": {"type": "string"}, "wound": {"type": "string"}, "defense_mechanism": {"type": "string"}, "transformation_path": {"type": "string"}}
+}

@@ -1,0 +1,4 @@
+[
+  {"name": "倒计时开篇", "mechanism": ["明确期限", "立即代价", "可见目标"], "failure": "期限只在设定中存在，场景没有压力", "source": "synthetic"},
+  {"name": "选择型高潮", "mechanism": ["两种都付代价", "角色主动选择", "不可逆后果"], "failure": "高潮由外力替角色决定", "source": "synthetic"}
+]

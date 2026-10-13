@@ -1,0 +1,4 @@
+[
+  {"name": "悲剧英雄", "type": "character_pattern", "mechanism": ["理想", "冲突", "牺牲"], "effect": "产生悲悯", "source": "synthetic"},
+  {"name": "盛极而衰", "type": "structure_pattern", "mechanism": ["繁荣幻觉", "不可逆损失", "迟来的理解"], "effect": "产生惋惜和历史感", "source": "synthetic"}
+]

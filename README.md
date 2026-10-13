@@ -10,7 +10,7 @@
 
 NovelOS is an AI chief-editor system for million-word fiction: multi-agent analysis, long-term memory, continuity checks, and actionable revision decisions—diagnosis and planning, not bulk prose generation.
 
-[![Version](https://img.shields.io/badge/version-3.0.0-6366f1.svg)](CHANGELOG.md) [![License](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-3.5.0-6366f1.svg)](CHANGELOG.md) [![License](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
 
 </div>
 
@@ -58,8 +58,8 @@ $novel-analysis 女主应该死亡还是失忆？请调用文学、人物、商�
 | --- | --- |
 | `agents/` | Agent contract and editorial roles |
 | `orchestrator/` | Routing, modes, execution policy and context levels |
-| `runtime/` | Pipeline, scheduling, state and failure handling |
-| `memory/` | Character, timeline, foreshadow, relationship and world schemas |
+| `runtime/` | Executable pipeline, scheduling, state, logs and Memory Commit |
+| `memory/` | Schemas, runtime storage, history and snapshots |
 | `memory_engine/` | Retrieval, relevance and context construction |
 | `literary_engine/` | Theme, symbolism, prose, voice and aesthetic judgment |
 | `literary_graph/` | Reusable literary mechanisms and patterns |
@@ -70,6 +70,14 @@ $novel-analysis 女主应该死亡还是失忆？请调用文学、人物、商�
 | `observability/` | Execution, cost, failure and performance traces |
 | `author_model/` | Author taste, beliefs, style and correction memory |
 | `dataset/`, `benchmark/`, `tests/` | Golden data and regression cases |
+
+The executable smoke suite is intentionally small and dependency free:
+
+```powershell
+python test.py
+```
+
+The current MVP runs benchmark fixtures, scores Agent outputs, writes resumable task state, and commits Memory proposals through a validation boundary.
 
 ## Design principles
 

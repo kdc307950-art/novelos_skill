@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Runtime Foreshadow",
+  "type": "object",
+  "required": ["id", "name", "introduced_chapter", "status"],
+  "properties": {"id": {"type": "string"}, "name": {"type": "string"}, "introduced_chapter": {"type": "string"}, "expected_payoff": {"type": "string"}, "payoff_chapter": {"type": ["string", "null"]}, "status": {"type": "string", "enum": ["open", "closed", "overdue", "failed"]}}
+}

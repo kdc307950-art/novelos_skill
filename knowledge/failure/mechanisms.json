@@ -1,0 +1,4 @@
+[
+  {"failure": "角色突然改变", "cause": "缺少心理节点", "fix": "增加触发器、压力测试和可见选择", "source": "synthetic"},
+  {"failure": "伏笔只在回收时解释", "cause": "中间没有记忆提示", "fix": "加入轻量重复意象或关系触发", "source": "synthetic"}
+]

@@ -42,6 +42,13 @@
 - Author Model 2.0：taste、belief、rejection patterns、creative identity。
 - Evaluation 2.0、Human Feedback 和五类 V3 Benchmark。
 
+## v3.5
+
+- 新增可执行 Runtime：Executor、Pipeline、Task State、JSONL trace、Memory Manager。
+- 拆分 Memory Schema 与 Runtime Storage，增加 proposal → validate → commit → snapshot 边界。
+- 新增 Evaluation Runner、统一评分、Literary Engine heuristics 和 `python test.py` smoke suite。
+- 新增 MVP Knowledge Base 与 baseline/NovelOS A/B comparison contract。
+
 ## v2.1
 
 - 引入 Orchestrator、小说状态层、人物心理、Scene Engine、读者记忆和市场承诺模型。

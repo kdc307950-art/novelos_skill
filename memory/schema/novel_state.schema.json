@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Runtime Novel State",
+  "type": "object",
+  "required": ["current_arc", "current_conflict", "story_phase"],
+  "properties": {"current_arc": {"type": "string"}, "current_conflict": {"type": "string"}, "reader_expectation": {"type": "string"}, "open_questions": {"type": "array", "items": {"type": "string"}}, "unresolved_tension": {"type": "array", "items": {"type": "string"}}, "current_emotion": {"type": "string"}, "story_phase": {"type": "string", "enum": ["setup", "development", "climax", "end"]}}
+}

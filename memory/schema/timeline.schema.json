@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Runtime Timeline",
+  "type": "object",
+  "required": ["chapter", "time", "location", "events"],
+  "properties": {"chapter": {"type": "string"}, "time": {"type": "string"}, "location": {"type": "string"}, "events": {"type": "array", "items": {"type": "string"}}, "consequence": {"type": "array", "items": {"type": "string"}}}
+}

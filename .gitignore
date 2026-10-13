@@ -8,3 +8,5 @@ build/
 Thumbs.db
 *.tmp
 *.local.json
+logs/
+runtime/state/

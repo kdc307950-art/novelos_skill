@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS A/B Comparison",
+  "type": "object",
+  "required": ["case_id", "baseline", "novelos", "dimensions"],
+  "properties": {"case_id": {"type": "string"}, "baseline": {"type": "object"}, "novelos": {"type": "object"}, "dimensions": {"type": "object", "properties": {"finding_count": {"type": "number"}, "evidence_accuracy": {"type": "number"}, "revision_value": {"type": "number"}, "literary_judgment": {"type": "number"}}}}
+}
