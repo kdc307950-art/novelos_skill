@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.10.2
+
+- 新增公开 Demo Report：原创合成章节、人物、连续性、结构和总评报告。
+- 新增 Benchmark 标注规范、Cohen/Fleiss agreement 计算和公开报告模板。
+- README 增加 Demo、Benchmark 和可信化入口。
+
 ## v3.10.1
 
 - 新增 GUI Alpha：项目状态、章节编辑、分析面板和 Memory 概览。

@@ -10,7 +10,7 @@
 
 NovelOS is an AI-native workspace for planning, writing, reviewing, and maintaining long-form fiction.
 
-[![Version](https://img.shields.io/badge/version-3.10.1-6366f1.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-3.10.2-6366f1.svg)](CHANGELOG.md)
 [![Release](https://img.shields.io/github/v/release/kdc307950-art/novelos_skill?label=download)](https://github.com/kdc307950-art/novelos_skill/releases/latest)
 [![License](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-3000%20pending-f59e0b.svg)](benchmark_suite/README.md)
@@ -71,7 +71,21 @@ Passed: 5
 Failed: 0
 ```
 
-The latest source archive is available from the [v3.10.1 release](https://github.com/kdc307950-art/novelos_skill/releases/latest).
+The latest source archive is available from the [v3.10.2 release](https://github.com/kdc307950-art/novelos_skill/releases/latest).
+
+## Demo Report
+
+See [Try Demo Report](examples/demo_novel/README.md) for a five minute walkthrough using an original synthetic chapter. It shows the input, overall score, character analysis, continuity finding, structure map and an editor recommendation.
+
+The demo keeps the evidence chain visible:
+
+```text
+chapter01.md
+→ report.md
+→ character.md / continuity.md / structure.md
+```
+
+The [benchmark annotation guide](benchmark/annotation/guidelines.md) defines the four review dimensions and the [agreement module](benchmark/agreement/kappa.py) provides Cohen's and Fleiss' kappa calculations. No demo score or agreement value is presented as a real model result.
 
 ## GUI Alpha
 
@@ -156,7 +170,7 @@ Start with [CONTRIBUTING.md](CONTRIBUTING.md). New agents must follow [agents/in
 
 ## Project documents
 
-[Skill entry point](SKILL.md) · [Changelog](CHANGELOG.md) · [V3.6 dataset](dataset/literary_benchmark/README.md) · [V3.9 validation](benchmark_suite/README.md) · [Creator Mode](creator_engine/quality_checker/self_review.md) · [MCP Alpha](interfaces/mcp/README.md)
+[Skill entry point](SKILL.md) · [Changelog](CHANGELOG.md) · [Demo Report](examples/demo_novel/README.md) · [Dataset](dataset/literary_benchmark/README.md) · [V3.9 validation](benchmark_suite/README.md) · [Creator Mode](creator_engine/quality_checker/self_review.md) · [MCP Alpha](interfaces/mcp/README.md)
 
 ## License
 
