@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Benchmark Suite Case",
+  "type": "object",
+  "required": ["id", "category", "input", "question", "expected", "status", "source"],
+  "properties": {"id": {"type": "string"}, "category": {"enum": ["continuity", "character", "structure", "literary", "commercial", "failure"]}, "input": {"type": "string"}, "question": {"type": "string"}, "expected": {"type": "string"}, "status": {"enum": ["pending", "verified", "rejected"]}, "source": {"enum": ["synthetic", "github", "authorized"]}, "license": {"type": "string"}, "split": {"enum": ["train", "validation", "test"]}}
+}

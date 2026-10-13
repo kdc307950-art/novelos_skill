@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.9.0
+
+- 新增 3000 条 Benchmark Suite pending 配额与校验器。
+- 新增实验调度/追踪、模型比较、盲评流程、统计分析和消融计划。
+- 新增 Agent Metrics、Evidence 2.0 和 Failure Mining 目录。
+
 ## v3.8.0
 
 - 新增 Experiment Engine、20 个计划任务和可复现实验记录。

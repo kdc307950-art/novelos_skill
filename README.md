@@ -10,7 +10,7 @@
 
 NovelOS is an AI chief-editor system for million-word fiction: multi-agent analysis, long-term memory, continuity checks, and actionable revision decisions—diagnosis and planning, not bulk prose generation.
 
-[![Version](https://img.shields.io/badge/version-3.8.0-6366f1.svg)](CHANGELOG.md) [![Release](https://img.shields.io/github/v/release/kdc307950-art/novelos_skill?label=download)](https://github.com/kdc307950-art/novelos_skill/releases/latest) [![License](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-3.9.0-6366f1.svg)](CHANGELOG.md) [![Release](https://img.shields.io/github/v/release/kdc307950-art/novelos_skill?label=download)](https://github.com/kdc307950-art/novelos_skill/releases/latest) [![License](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
 
 </div>
 
@@ -44,7 +44,7 @@ flowchart LR
 
 ## Quick start
 
-Download the latest version from the [v3.8.0 release](https://github.com/kdc307950-art/novelos_skill/releases/latest), or clone the repository:
+Download the latest version from the [v3.9.0 release](https://github.com/kdc307950-art/novelos_skill/releases/latest), or clone the repository:
 
 | Package | Link |
 | --- | --- |
@@ -124,6 +124,7 @@ V3.6.5 adds annotation rubrics, a two reviewer process, AI/human score alignment
 | `evaluation_engine/`, `metrics/`, `optimizer/` | Measured evaluation, agent metrics and failure-driven improvement |
 | `experiments/`, `human_eval/`, `evidence/` | Reproducible experiments, blind review and evidence records |
 | `agent_analysis/`, `failure_analysis/` | Ablation, contribution and failure intelligence |
+| `benchmark_suite/`, `comparison/`, `statistics/`, `ablation/` | Scientific validation, comparison and statistics |
 
 The current MVP runs benchmark fixtures, validates six literary dataset seeds, scores Agent outputs, writes resumable task state, and commits Memory proposals through a validation boundary.
 

@@ -1,0 +1,1 @@
+{"status":"pending_measurement","agents":{},"required_fields":["usage","gain","error_rate","latency_ms","sample_count","benchmark_version"]}

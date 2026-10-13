@@ -1,0 +1,6 @@
+[
+  {"name":"baseline","components":[]},
+  {"name":"memory","components":["memory"]},
+  {"name":"agents","components":["structure","character","continuity","literary","commercial"]},
+  {"name":"full_novel_os","components":["memory","debate","evaluation","structure","character","continuity","literary","commercial"]}
+]
