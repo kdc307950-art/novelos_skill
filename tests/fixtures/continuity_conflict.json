@@ -1,0 +1,7 @@
+{
+  "case_id": "continuity_conflict_001",
+  "facts": [
+    {"chapter": "C001", "character": "CHAR_A", "fact": "失去右手"},
+    {"chapter": "C020", "character": "CHAR_A", "fact": "双手弹琴"}
+  ]
+}

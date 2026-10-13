@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Literary Mechanism Pattern",
+  "type": "object",
+  "required": ["pattern_id", "pattern", "mechanism", "emotional_effect", "examples", "limits"],
+  "properties": {"pattern_id": {"type": "string"}, "pattern": {"type": "string"}, "mechanism": {"type": "string"}, "emotional_effect": {"type": "string"}, "examples": {"type": "array", "items": {"type": "string"}}, "limits": {"type": "string"}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}}
+}

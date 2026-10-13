@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Debate Argument",
+  "type": "object",
+  "required": ["argument_id", "agent", "round", "position", "claim", "evidence", "risk", "confidence"],
+  "properties": {
+    "argument_id": {"type": "string"}, "agent": {"type": "string"}, "round": {"type": "string", "enum": ["independent", "challenge", "response"]}, "position": {"type": "string"}, "claim": {"type": "string"}, "reasoning": {"type": "string"}, "evidence": {"type": "array", "items": {"type": "object", "required": ["chapter", "scene", "text"], "properties": {"chapter": {"type": "string"}, "scene": {"type": "string"}, "text": {"type": "string"}}}}, "challenges": {"type": "array", "items": {"type": "string"}}, "risk": {"type": "string"}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+  }
+}

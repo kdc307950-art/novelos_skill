@@ -1,0 +1,16 @@
+{
+  "snapshot_id": "v001",
+  "created_at": "",
+  "chapter_boundary": "",
+  "state_ref": "../novel_state.json",
+  "memory_refs": {
+    "characters": [],
+    "timeline": [],
+    "foreshadow": [],
+    "relationships": [],
+    "world": [],
+    "scenes": []
+  },
+  "pending_changes": [],
+  "notes": "初始化快照；首次导入小说时填写创建时间和章节边界。"
+}

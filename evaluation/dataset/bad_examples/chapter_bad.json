@@ -1,0 +1,6 @@
+{
+  "case_id": "gold_bad_001",
+  "summary": "连续三个场景都在解释背景，主角没有目标或选择，结尾用泛化的‘危机即将来临’收尾。",
+  "expected": {"pacing": "low", "hook": "weak", "ai_trace_risk": "medium_or_high", "evidence_min": 3},
+  "source": "synthetic"
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Literary Graph Node",
+  "type": "object",
+  "required": ["node_id", "node_type", "label", "description", "source", "confidence"],
+  "properties": {"node_id": {"type": "string"}, "node_type": {"type": "string", "enum": ["theme", "character_pattern", "structure_pattern", "style_pattern", "symbol"]}, "label": {"type": "string"}, "description": {"type": "string"}, "source": {"type": "string"}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}}
+}

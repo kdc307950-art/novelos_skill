@@ -1,0 +1,9 @@
+{
+  "pattern_id": "PATTERN_RISE_AND_FALL",
+  "pattern": "盛极而衰结构",
+  "mechanism": "先制造繁荣和安全的可相信幻觉，再通过连续不可逆损失揭示崩塌早已发生",
+  "emotional_effect": "惋惜、迟来的理解和历史感",
+  "examples": ["用户授权作品或抽象案例"],
+  "limits": "若前期繁荣没有具体代价或崩塌只靠旁白宣布，机制会变成套路",
+  "confidence": 0.6
+}

@@ -1,0 +1,5 @@
+[
+  {"node_id": "THEME_RESPONSIBILITY", "node_type": "theme", "label": "责任与自由", "description": "个人选择与系统责任之间的张力", "source": "synthetic", "confidence": 0.5},
+  {"node_id": "PATTERN_IDEALIST_AWAKENING", "node_type": "character_pattern", "label": "理想主义者的觉醒", "description": "信念受挫后重新定义责任", "source": "synthetic", "confidence": 0.5},
+  {"node_id": "STYLE_RESTRAINED", "node_type": "style_pattern", "label": "克制", "description": "用行动、留白和物件承载情绪", "source": "synthetic", "confidence": 0.5}
+]

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Author Rejection Patterns",
+  "type": "array",
+  "items": {"type": "object", "required": ["pattern", "count", "last_seen", "scope", "confidence"], "properties": {"pattern": {"type": "string"}, "count": {"type": "integer", "minimum": 1}, "last_seen": {"type": "string"}, "scope": {"type": "string"}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}}}
+}

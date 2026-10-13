@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Scene Record",
+  "type": "object",
+  "required": ["id", "chapter", "goal", "conflict", "turning_point", "scene_function", "emotion_curve", "new_information"],
+  "properties": {"id": {"type": "string"}, "chapter": {"type": "string"}, "goal": {"type": "string"}, "conflict": {"type": "string"}, "turning_point": {"type": "string"}, "scene_function": {"type": "array", "items": {"type": "string", "enum": ["setup", "conflict", "reveal", "emotion", "payoff"]}}, "emotion_curve": {"type": "object", "required": ["start", "peak", "end"], "properties": {"start": {"type": "integer", "minimum": 0, "maximum": 100}, "peak": {"type": "integer", "minimum": 0, "maximum": 100}, "end": {"type": "integer", "minimum": 0, "maximum": 100}}}, "new_information": {"type": "string"}, "evidence": {"type": "array", "items": {"type": "string"}}}
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Character Record",
+  "type": "object",
+  "required": ["id", "name", "role", "core_identity", "desire", "fear", "belief", "strength", "weakness", "secret", "relationship", "character_arc", "appearance_history", "decision_history"],
+  "properties": {
+    "id": {"type": "string"}, "name": {"type": "string"}, "role": {"type": "string"}, "core_identity": {"type": "string"}, "desire": {"type": "string"}, "fear": {"type": "string"}, "belief": {"type": "string"}, "external_goal": {"type": "string"}, "internal_need": {"type": "string"}, "false_belief": {"type": "string"}, "wound": {"type": "string"}, "defense_mechanism": {"type": "string"}, "pressure_response": {"type": "string"}, "transformation_path": {"type": "string"}, "strength": {"type": "array", "items": {"type": "string"}}, "weakness": {"type": "array", "items": {"type": "string"}}, "secret": {"type": "string"}, "relationship": {"type": "array", "items": {"type": "string"}},
+    "character_arc": {"type": "object", "required": ["start", "middle", "end"], "properties": {"start": {"type": "string"}, "middle": {"type": "string"}, "end": {"type": "string"}}},
+    "appearance_history": {"type": "array", "items": {"type": "object", "required": ["chapter", "scene", "state", "evidence"], "properties": {"chapter": {"type": "string"}, "scene": {"type": "string"}, "state": {"type": "string"}, "evidence": {"type": "array", "items": {"type": "string"}}}}},
+    "decision_history": {"type": "array", "items": {"type": "object", "required": ["chapter", "decision", "consequence", "evidence"], "properties": {"chapter": {"type": "string"}, "decision": {"type": "string"}, "consequence": {"type": "string"}, "evidence": {"type": "array", "items": {"type": "string"}}}}}
+  }
+}

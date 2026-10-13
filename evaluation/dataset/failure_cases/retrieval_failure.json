@@ -1,0 +1,7 @@
+{
+  "case_id": "gold_failure_001",
+  "failure_type": "memory_retrieval_error",
+  "summary": "当前章节再次出现已登记人物，但检索只返回无关地点。",
+  "expected": {"must_record": "failure", "must_not": "invent_character_history"},
+  "source": "synthetic"
+}

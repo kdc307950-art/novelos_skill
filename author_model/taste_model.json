@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Author Taste Model",
+  "type": "object",
+  "required": ["preferred_aesthetics", "disliked_tropes", "evidence_refs", "confidence"],
+  "properties": {"preferred_aesthetics": {"type": "array", "items": {"type": "string"}}, "disliked_tropes": {"type": "array", "items": {"type": "string"}}, "evidence_refs": {"type": "array", "items": {"type": "string"}}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}}
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Author Taboo List",
+  "type": "array",
+  "items": {"type": "object", "required": ["rule", "scope", "source", "status"], "properties": {"rule": {"type": "string"}, "scope": {"type": "string"}, "source": {"type": "string"}, "status": {"type": "string", "enum": ["confirmed", "provisional", "retired"]}}}
+}

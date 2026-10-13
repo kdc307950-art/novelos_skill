@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Author Preference Profile",
+  "type": "object",
+  "required": ["preferred_pacing", "preferred_character", "preferred_ending", "constraints", "evidence_refs", "confidence"],
+  "properties": {"preferred_pacing": {"type": "string"}, "preferred_character": {"type": "string"}, "preferred_ending": {"type": "string"}, "constraints": {"type": "array", "items": {"type": "string"}}, "evidence_refs": {"type": "array", "items": {"type": "string"}}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}}
+}

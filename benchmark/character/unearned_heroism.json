@@ -1,0 +1,6 @@
+{
+  "case_id": "CHAR_001",
+  "facts": [{"chapter": "C001", "fact": "CHAR_A refuses violence"}, {"chapter": "C002", "fact": "CHAR_A launches a lethal attack without pressure or decision evidence"}],
+  "expected": "flag missing transformation node",
+  "source": "synthetic"
+}

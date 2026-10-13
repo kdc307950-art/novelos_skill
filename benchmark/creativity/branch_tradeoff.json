@@ -1,0 +1,6 @@
+{
+  "case_id": "CREATIVE_001",
+  "question": "Should the heroine die or lose her memory?",
+  "expected": ["generate at least two branches", "predict literary, character, reader, and commercial consequences", "preserve author choice"],
+  "source": "synthetic"
+}

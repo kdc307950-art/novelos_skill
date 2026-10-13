@@ -1,0 +1,6 @@
+{
+  "case_id": "gold_score_001",
+  "dimensions": {"structure": [8, 9], "character": [8, 9], "emotion": [7, 9], "commercial": [6, 8], "language": [7, 9]},
+  "rubric": "每项必须引用证据；综合分按 quality_score 权重计算，不得因单项突出而掩盖 P0 连续性错误。",
+  "source": "synthetic"
+}

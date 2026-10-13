@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Execution Record",
+  "type": "object",
+  "required": ["execution_id", "task", "start_time", "end_time", "status", "agents", "stages", "final_score", "memory_changes", "evaluation_ref"],
+  "properties": {
+    "execution_id": {"type": "string"}, "task": {"type": "string"}, "start_time": {"type": "string"}, "end_time": {"type": "string"}, "status": {"type": "string", "enum": ["queued", "running", "completed", "degraded", "failed"]},
+    "agents": {"type": "array", "items": {"type": "object", "required": ["name", "status"], "properties": {"name": {"type": "string"}, "status": {"type": "string"}, "duration_ms": {"type": "integer", "minimum": 0}, "finding_ids": {"type": "array", "items": {"type": "string"}}}}},
+    "stages": {"type": "array", "items": {"type": "object", "required": ["name", "status"], "properties": {"name": {"type": "string"}, "status": {"type": "string"}, "duration_ms": {"type": "integer", "minimum": 0}}}},
+    "final_score": {"type": ["number", "null"], "minimum": 0, "maximum": 10}, "memory_changes": {"type": "integer", "minimum": 0}, "evaluation_ref": {"type": ["string", "null"]}, "errors": {"type": "array", "items": {"type": "string"}}
+  }
+}

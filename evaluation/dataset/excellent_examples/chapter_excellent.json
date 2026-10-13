@@ -1,0 +1,6 @@
+{
+  "case_id": "gold_excellent_001",
+  "summary": "主角为救对手放弃胜利，行动同时推进主线、关系和主题；结尾兑现前文承诺并留下新问题。",
+  "expected": {"structure": "high", "character": "high", "emotion": "high", "evidence_min": 3},
+  "source": "synthetic"
+}

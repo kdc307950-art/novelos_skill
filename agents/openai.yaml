@@ -1,0 +1,7 @@
+interface:
+  display_name: "NovelOS v2.2 小说总编辑"
+  short_description: "面向百万字长篇小说的结构记忆分析与编辑决策系统"
+  default_prompt: "使用 $novel-analysis 管理这部小说的章节记忆，运行结构、连续性、商业和读者分析，并输出编辑报告与优先级改稿计划。"
+policy:
+  allow_implicit_invocation: true
+

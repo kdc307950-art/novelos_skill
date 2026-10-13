@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Creative Identity",
+  "type": "object",
+  "required": ["core_questions", "signature_traits", "long_term_aims", "evidence_refs", "confidence"],
+  "properties": {"core_questions": {"type": "array", "items": {"type": "string"}}, "signature_traits": {"type": "array", "items": {"type": "string"}}, "long_term_aims": {"type": "array", "items": {"type": "string"}}, "evidence_refs": {"type": "array", "items": {"type": "string"}}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}}
+}

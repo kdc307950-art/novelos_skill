@@ -1,0 +1,6 @@
+{
+  "case_id": "CONT_001",
+  "facts": [{"chapter": "C010", "fact": "CHAR_A dies"}, {"chapter": "C020", "fact": "CHAR_A negotiates"}],
+  "expected": "detect hard contradiction or explicit resurrection explanation",
+  "source": "synthetic"
+}

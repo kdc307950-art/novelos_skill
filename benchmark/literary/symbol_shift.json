@@ -1,0 +1,6 @@
+{
+  "case_id": "LIT_001",
+  "facts": ["rain appears as relief in early scenes", "rain appears during forced exile in late scenes"],
+  "expected": "identify possible symbol with semantic shift and uncertainty",
+  "source": "synthetic"
+}

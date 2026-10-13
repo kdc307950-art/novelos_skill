@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NovelOS Author Belief Model",
+  "type": "object",
+  "required": ["craft_beliefs", "value_tensions", "evidence_refs", "confidence"],
+  "properties": {"craft_beliefs": {"type": "array", "items": {"type": "string"}}, "value_tensions": {"type": "array", "items": {"type": "string"}}, "evidence_refs": {"type": "array", "items": {"type": "string"}}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}}
+}

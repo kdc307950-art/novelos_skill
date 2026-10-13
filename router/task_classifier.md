@@ -1,0 +1,3 @@
+# Task Classifier
+
+将用户请求分类为：chapter_diagnosis、deep_edit、serial_maintenance、character_psychology、continuity_audit、commercial_positioning、style_review、revision_planning。提取范围、目标、深度、输出格式和是否允许记忆更新。

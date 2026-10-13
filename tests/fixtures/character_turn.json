@@ -1,0 +1,7 @@
+{
+  "case_id": "character_turn_001",
+  "facts": [
+    {"chapter": "C001", "character": "CHAR_A", "fact": "胆小"},
+    {"chapter": "C002", "character": "CHAR_A", "fact": "无铺垫地自杀攻击"}
+  ]
+}
